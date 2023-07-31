@@ -120,19 +120,18 @@ export class FetchApiDataService {
   addFavoriteMovie(movieId: string): Observable<any> {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
     const token = localStorage.getItem('token');
-    user.FavoriteMovies.push(movieId);
-    localStorage.setItem('user', JSON.stringify(user));
+  
+    // Make the API call to the backend server to add the movie to favorites
     return this.http.post(apiUrl + 'users/' + user.Username + '/movies/' + movieId, {}, {
-      headers: new HttpHeaders(
-        {
-          Authorization: 'Bearer ' + token,
-        }),
-      responseType: "text"
+      headers: new HttpHeaders({
+        Authorization: 'Bearer ' + token,
+      }),
+      responseType: 'text' // Change the responseType to 'text' since the server returns a text response
     }).pipe(
-      map(this.extractResponseData),
       catchError(this.handleError)
     );
   }
+  
 
   isFavoriteMovie(movieId: string): boolean {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
