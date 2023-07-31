@@ -9,22 +9,32 @@
             <button
                 mat-button
                 color="primary"
+                (click)="openGenreInfo(movie.Genres)"
             >
                 Genre
             </button>
             <button
                 mat-button
                 color="primary"
+                (click)="openDirectorInfo(movie.Director)"
             >
                 Director
             </button>
             <button
                 mat-button
                 color="primary"
+                (click)="openMovieInfo(movie.Title, movie.Description)"
             >
                 Synopsis
             </button>
-            <mat-icon>favorite_border</mat-icon>
+            <button
+             mat-icon-button
+            [ngClass]="{ 'favorite': isMovieFavorite(movie) }"
+             (click)="toggleFavorite(movie)"
+             aria-label="Add to Favorites"
+             >
+    <mat-icon>favorite</mat-icon>
+  </button>
         </mat-card-actions>
     </mat-card>
 </div>
