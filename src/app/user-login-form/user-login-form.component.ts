@@ -47,7 +47,7 @@ export class UserLoginFormComponent implements OnInit {
 
       this.router.navigate(['movies']);
       this.dialogRef.close();
-      this.snackBar.open('you\'ve been logged in', 'OK', {
+      this.snackBar.open('You\'ve been logged in', 'OK', {
         duration: 2000
       });
     }, () => {
