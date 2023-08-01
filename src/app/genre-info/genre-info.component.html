@@ -1,11 +1,9 @@
-<h2 mat-dialog-title>Genre Information</h2>
 <mat-dialog-content>
   <div *ngFor="let genre of data.genres">
     <h1>{{ genre.Name }}</h1>
-    <div>{{ genre.Description }}</div>
-    <hr> <!-- Add a separator between each genre's information -->
+    <div class="genreDescription">{{ genre.Description }}</div>
   </div>
 </mat-dialog-content>
-<mat-dialog-actions>
+<mat-dialog-actions class="genreButtonContainer">
   <button mat-button mat-dialog-close>Close</button>
 </mat-dialog-actions>
