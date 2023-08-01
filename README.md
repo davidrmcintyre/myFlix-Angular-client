@@ -1,27 +1,40 @@
-# MyFlixAngularClient
+# Road Movie Cinephiles Angular Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+MyFlix is a web application that allows users to discover and manage their favorite movies. It provides a user-friendly interface for browsing movie details, genres, and directors. Users can create accounts, log in, and personalize their movie preferences.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+User Registration: Users can create an account with a unique username and password to access personalized movie recommendations.
 
-## Code scaffolding
+User Login: Registered users can log in to access their accounts and save favorite movies.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Browse Movies: Users can browse a collection of movies, view details, and see movie posters.
 
-## Build
+Genre and Director Information: Users can explore movies by genres and directors for more personalized recommendations.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Favorite Movies: Users can mark movies as favorites to keep track of movies they love.
 
-## Running unit tests
+Update Profile: Users can edit their profiles, change their usernames, passwords, and other account information.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Delete Account: Users have the option to delete their accounts and all associated data.
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Angular: Frontend web framework for building the user interface and interactions.
 
-## Further help
+TypeScript: Superset of JavaScript used for developing Angular applications.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Angular Material: UI component library providing pre-built, customizable UI elements.
+
+Node.js: Backend JavaScript runtime for running the development server.
+
+MongoDB: NoSQL database for storing movie and user data.
+
+Express.js: Backend framework for creating RESTful APIs and server-side functionalities.
+
+Heroku: Cloud platform used for deployment.
+
+## License 
+
+The MyFlix project is open-source and available under the MIT License.
+
