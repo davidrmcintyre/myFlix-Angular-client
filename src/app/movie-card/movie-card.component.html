@@ -1,6 +1,6 @@
 <div class="movie-grid">
     <div *ngFor="let movie of movies" class="movie-card">
-      <mat-card>
+      <mat-card role="article">
         <mat-card-header>
             <mat-card-title class="movieTitle">{{ movie.Title }}</mat-card-title>
             <mat-card-subtitle class="directorName">Directed by: {{ movie.Director.firstName }} {{ movie.Director.lastName }}</mat-card-subtitle>
@@ -12,18 +12,21 @@
             <button
                 mat-button
                 (click)="openGenreInfo(movie.Genres)"
+                aria-label="View Genres"
             >
                 Genre
             </button>
             <button
                 mat-button
                 (click)="openDirectorInfo(movie.Director)"
+                aria-label="View Director Information"
             >
                 Director
             </button>
             <button
                 mat-button
                 (click)="openMovieInfo(movie.Title, movie.Description)"
+                aria-label="View Synopsis"
             >
                 Synopsis
             </button>
