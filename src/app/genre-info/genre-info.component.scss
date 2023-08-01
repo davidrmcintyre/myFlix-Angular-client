@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
 
-h1, .genreDescription, button {
+h4, .genreDescription, button {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
 
-h1 {
+h4 {
     font-weight: 600;
     color: #000;
 }
@@ -21,7 +21,7 @@ h1 {
 
 button {
     color: #000;
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
 }
 
 button:hover {
