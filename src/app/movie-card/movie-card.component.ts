@@ -1,12 +1,11 @@
 // src/app/movie-card/movie-card.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 import { MovieInfoComponent } from '../movie-info/movie-info.component';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { GenreInfoComponent } from '../genre-info/genre-info.component';
 import { DirectorInfoComponent } from '../director-info/director-info.component';
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-movie-card',
