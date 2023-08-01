@@ -1,33 +1,39 @@
-<mat-card>
-    <mat-card-header>
-      <mat-card-title>Login</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <form>
-        <mat-form-field>
-          <input matInput 
-          [(ngModel)]="userData.Username" 
-          placeholder="Username" 
-          type="text" 
-          name="Username" required>
-        </mat-form-field>
-  
-        <mat-form-field>
-          <input matInput 
-          [(ngModel)]="userData.Password" 
-          type="password" 
-          placeholder="Password" 
-          name="Password" 
-          required>
-        </mat-form-field>
-  
-      </form>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button 
-      (click)="loginUser()" 
-      color="primary">
-        Login
-      </button>
-    </mat-card-actions>
-  </mat-card>
+<mat-card aria-label="Login Form">
+  <mat-card-header>
+    <mat-card-title>
+     <h4 class="login-title">Login</h4>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <input matInput 
+        [(ngModel)]="userData.Username" 
+        placeholder="Username" 
+        type="text" 
+        name="Username"
+        aria-label="Username Input"
+        required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput 
+        [(ngModel)]="userData.Password" 
+        type="password" 
+        placeholder="Password" 
+        name="Password"
+        aria-label="Password Input" 
+        required>
+      </mat-form-field>
+
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button 
+    (click)="loginUser()"
+    aria-label="Login Button"
+    class="login-button">
+      Login
+    </button>
+  </mat-card-actions>
+</mat-card>
