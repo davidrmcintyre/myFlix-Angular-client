@@ -1,7 +1,8 @@
-<!-- src/app/user-registration-form/user-registration-form.component.html -->
-<mat-card>
+<mat-card aria-label="User Registration Form">
     <mat-card-header>
-      <mat-card-title>Sign Up!</mat-card-title>
+      <mat-card-title>
+        <h4>Sign Up</h4>
+      </mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <form>
@@ -12,6 +13,7 @@
             placeholder="Username"
             type="text"
             name="Username"
+            aria-label="Username Input"
             required
           >
           </mat-form-field>
@@ -22,6 +24,7 @@
             type = "password"
             placeholder="Password"
             name="Password"
+            aria-label="Password Input"
             required
           >
         </mat-form-field>
@@ -32,6 +35,7 @@
             type = "email"
             placeholder="Email"
             name="Email"
+            aria-label="Email Input"
             required
           >
         </mat-form-field>
@@ -42,6 +46,7 @@
             type = "date"
             placeholder="Birthday"  
             name="Birthday"
+            aria-label="Birthday Input"
           >
         </mat-form-field>
       </form>
@@ -49,8 +54,9 @@
     <mat-card-actions>
         <button
           mat-raised-button
+          class="sign-up-button"
           (click)="registerUser()"
-          color="primary"
+          aria-label="Sign Up Button"
         >
           Sign Up
         </button>
