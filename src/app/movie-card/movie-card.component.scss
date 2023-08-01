@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
+
+.movieTitle {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+.directorName {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
 .movie-image-container {
   display: flex;
   justify-content: center;
@@ -7,6 +19,9 @@
 
 .movieImage {
     max-width: 75%;
+    box-sizing: border-box;
+    border-radius: 5%;
+    border: 1px solid #000;
 }
 
 .actions {
@@ -16,13 +31,13 @@
 }
 
 .favorite {
-    color: red; /* Change to the desired color for favorites */
+    color: red;
   }
 
   .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 15px;
     justify-content: center;
   }
   
@@ -30,8 +45,6 @@
     width: 90%;
     max-width: 300px;
     margin: 15px;
-    border: 1px solid #000;
-    box-shadow: 1px 1px 1px #b2b2b2;
   }
   
   
