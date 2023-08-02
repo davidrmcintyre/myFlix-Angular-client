@@ -13,25 +13,11 @@ export class AppComponent {
 
   constructor(public dialog: MatDialog) { }
 
+
   // This function will open the movies dialog
   openMoviesDialog(): void {
     this.dialog.open(MovieCardComponent, {
       width: '500px'
-    });
-  }
-
-  // This is the function that will open the dialog when the signup button is clicked  
-  openUserRegistrationDialog(): void {
-    this.dialog.open(UserRegistrationFormComponent, {
-// Assigning the dialog a width
-    width: '280px'
-    });
-  }
-
-  // Function to open the dialog when the login button is clicked
-  openUserLoginDialog(): void {
-    this.dialog.open(UserLoginFormComponent, {
-      width: '280px'
     });
   }
   }

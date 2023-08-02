@@ -100,6 +100,8 @@ export class FetchApiDataService {
      );
   }
 
+  
+
   // Making the api call for the get favourite movies for a user endpoint
   getFavoriteMovies(): Observable<any> {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
