@@ -22,7 +22,7 @@ Genre and Director Information: Users can explore movies by genres and directors
 
 ![Genre View](/img/genre-view.png)
 
-![Director View](/img/director-view-png)
+![Director View](/img/director-view.png)
 
 Favorite Movies: Users can mark movies as favorites to keep track of movies they love.
 
