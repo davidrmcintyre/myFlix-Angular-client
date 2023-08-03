@@ -23,6 +23,10 @@ ngOnInit(): void {
   this.getMovies();
 }
 
+/**
+ * fetches all movies from the api
+ */
+
 getMovies(): void {
   this.fetchApiData.getAllMovies().subscribe((resp: any) => {
       this.movies = resp;
@@ -31,7 +35,9 @@ getMovies(): void {
     });
   }
 
-  // function to open Movie info
+  /**
+   * Open the movie info dialog
+    */
   openMovieInfo(title: string, description: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -41,7 +47,9 @@ getMovies(): void {
     });
   }
 
-  // function to open Genres info
+  /**
+   * Opens the Genre info dialog
+   */
   openGenreInfo(genres: any[]): void {
     this.dialog.open(GenreInfoComponent, {
       data: {
@@ -51,7 +59,9 @@ getMovies(): void {
   }
 
 
-  // function to open Directors info
+  /**
+   * opens the Director info dialog
+   */
   openDirectorInfo(director: any): void {
     this.dialog.open(DirectorInfoComponent, {
       data: {
