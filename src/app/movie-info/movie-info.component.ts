@@ -9,6 +9,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class MovieInfoComponent implements OnInit {
 
+/**
+   * 
+   * @param fetchApiData calls to the api
+   * @param data data for the selected movie
+   */
+
   constructor(
     @Inject(MAT_DIALOG_DATA)
     public data: {
@@ -17,5 +23,9 @@ export class MovieInfoComponent implements OnInit {
     }
   ) { }
 
+
+  /**
+   * This function calls specified methods automatically straight after Component was mounted
+   */
   ngOnInit(): void { }
 }

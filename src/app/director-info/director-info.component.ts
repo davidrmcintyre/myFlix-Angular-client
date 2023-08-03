@@ -7,6 +7,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./director-info.component.scss']
 })
 export class DirectorInfoComponent implements OnInit {
+    /**
+   *
+   * @param fetchApiData calls to the api
+   * @param data data for the selected director
+   */
   constructor(
     @Inject(MAT_DIALOG_DATA)
     public data: {
@@ -17,5 +22,9 @@ export class DirectorInfoComponent implements OnInit {
     }
   ) { }
 
+
+  /**
+   * This function calls specified methods automatically straight after Component was mounted
+   */
   ngOnInit(): void { }
 }

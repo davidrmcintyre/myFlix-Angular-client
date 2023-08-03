@@ -31,6 +31,10 @@ export class UserProfileComponent implements OnInit {
     this.getUser();
   }
 
+  /**
+   * gets the user's account info and favorite movies from the api
+   */
+
 
 // this will get the user information and rreturn it along with their favourite movies
   getUser(): void {
